@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Bootstrap CSS 5.1.3 - 04/2022 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Fontawesome 6.1.1 - 04/2022 -->
+
+    <!-- Fonte do texto -->
+
+    <title>Filmes Populares</title>
+
+</head>
+
+<body onload="executaPesquisa();">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <h1 id="titulo">Seu Filme aqui</h1>
+    <form id="muda" class="d-flex">
+        <input id="txtPesquisa" class="form-control " type="search" placeholder="Pesquisar filme"
+            aria-label="Search">
+        <button id="btnPesquisa" class="btn btn-outline-light" type="button" >Pesquisar</button>
+    </form>
+</nav>
+
+    <div  class="cointainer-fluid"  >
+        <div class="row" id="ListaFilmes">
+            <div id="movies" class="card col-4">
+                <img class="card-img-top" src="" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="detalhes.html" class="btn btn-dark">Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script src="pesquisados.js"></script>
+
+</body>
+</html>

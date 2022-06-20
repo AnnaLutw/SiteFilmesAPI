@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS 5.1.3 - 04/2022 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Fontawesome 6.1.1 - 04/2022 -->
+    <!-- Fonte do texto -->
+
+    <title>Portal de Filmes</title>
+    
+</head>
+
+<body>
+    <header class="header">
+        <!-- Barra de navegação superior -->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img  class="navbar-brand" src="images/logo.png"  alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                        <li class="nav-item">
+                            <!-- href temporario -->
+                            <a class="nav-link active" aria-current="page" href="#lancamentos">Lançamentos    |  </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- href temporario -->
+                            <a class="nav-link" href="#destaques">Em destaque      | </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- href temporario -->
+                            <a class="nav-link" href="#avaliacoes">Avaliações  | </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- href temporario -->
+                            <a class="nav-link" href="#entrevistas">Entrevistas & Making of  | </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- href temporario -->
+                            <a class="nav-link" href="#novidades">Novidades  </a>
+                        </li>
+                        <form id="muda" class="d-flex">
+                            <input id="txtPesquisa" class="form-control " type="search" placeholder="Pesquisar filme"
+                                aria-label="Search">
+                            <button id="btnPesquisa" class="btn btn-outline-light" type="button" onclick="window.location='pesquisados.html?query='+document.getElementById('txtPesquisa').value" >Pesquisar</button>
+                        </form>
+                 </div>
+                 <div>
+                    <a id="popul" href="populares.html" class="btn btn-secondary" >FILMES POPULARES</a>
+                </div>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bloco de Lançamento -->
+        <div class="container main">
+            <h2 class="lancamentos" id="lancamentos">Lançamentos</h2>
+        </div>
+        <div class="container" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+
+                    <!-- 1 Filme -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row" style="margin-bottom: 60px;">
+                                <div class="col-xs-12 col-12 col-md-6" style="min-height: 294px;">
+                                    <iframe width="100%" height="105%" src="https://www.youtube.com/embed/QtYX2uCURrk"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-xs-12 col-12 col-md-6">
+                                    <p1 height="100% ">
+
+                                       <h3>Doutor Estranho no Multiverso da Loucura </h3> 
+                                       <!--sinopse-->
+                                       <p>O aguardado filme trata da jornada do Doutor Estranho rumo ao desconhecido. Além de receber ajuda de novos 
+                                           aliados místicos e outros já conhecidos do público, o personagem atravessa as realidades alternativas incompreensíveis e 
+                                           perigosas do Multiverso para enfrentar um novo e misterioso adversário.</p>
+                                    </p1>
+                                    <p></p>
+                                    <div class="row ">
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Diretor</b>: Sam Raimi
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Estreia</b>: 5 de maio dee 2022
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Roteiro</b>: Michael Waldron, Jade Bartlett
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <b>Elenco</b>:Benedict Cumberbatch, Elizabeth Olsen
+                                    </div>
+
+                                    <div class="col-12">
+                                        <b>Avaliação:</b> ★★★★☆
+                                    </div>
+
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="row" style="margin-bottom: 60px;">
+                                <div class="col-xs-12 col-12 col-md-6" style="min-height: 294px;">
+                                    <iframe width="100%" height="105%" src="https://www.youtube.com/embed/LcCrLZceCmg"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-xs-12 col-12 col-md-6">
+                                    <p1 height="100% ">
+
+                                       <h3>Animais Fantásticos: Os Segredos de Dumbledore </h3> 
+                                       <!--sinopse-->
+                                       <p>Animais Fantásticos: Os Segredos de Dumbledore/Sinopse do filme
+                                        O professor Alvo Dumbledore (Jude Law) sabe que o poderoso mago das trevas Gellert Grindelwald (Mads Mikkelsen) está se movimentando 
+                                        para assumir o controle do mundo mágico. Incapaz de detê-lo sozinho, ele pede ao magizoologista Newt Scamander (Eddie Redmayne) para liderar uma 
+                                        intrépida equipe de bruxos, bruxas e um corajoso padeiro trouxa em uma missão perigosa, em que eles encontram velhos e novos animais fantásticos e 
+                                        entram em conflito com a crescente legião de seguidores de Grindelwald. Mas com tantas ameaças, quanto tempo poderá Dumbledore permanecer à margem do embate?</p>
+                                    </p1>
+                                    <p></p>
+                                    <div class="row ">
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Diretor</b>: David Yates
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Estreia</b>: 14 de abril de 2022
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Roteiro</b>: J. K. Rowling, Steve Kloves
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <b>Elenco</b>:Mads Mikkelsen, Eddie Redmayne
+                                    </div>
+
+                                    <div class="col-12">
+                                        <b>Avaliação:</b> ★★★☆☆
+                                    </div>
+
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row" style="margin-bottom: 60px;">
+                                <div class="col-xs-12 col-12 col-md-6" style="min-height: 294px;">
+                                    <iframe width="100%" height="105%" src="https://www.youtube.com/embed/1ygQATx7_4g"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-xs-12 col-12 col-md-6">
+                                    <p1 height="100% ">
+
+                                       <h3>My Best Friend Anne Frank</h3> 
+                                       <!--sinopse-->
+                                       <p>Conheça a história da amizade entre Anne Frank e Hannah Goslar. Desde a ocupação nazista em Amsterdã ao angustiante 
+                                           reencontro das garotas em um campo de concentração.</p>
+                                    </p1>
+                                    <p></p>
+                                    <div class="row ">
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Diretor</b>: Ben Sombogaart
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Estreia</b>:4 de fevereiro de 2021
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Roteiro</b>: Paul Ruven, Marian Batavier
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <b>Elenco</b>:Aiko Beemsterboer , Hanneli Goslar
+                                    </div>
+
+                                    <div class="col-12">
+                                        <b>Avaliação:</b> ★★★★★
+                                    </div>
+
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row" style="margin-bottom: 60px;">
+                                <div class="col-xs-12 col-12 col-md-6" style="min-height: 294px;">
+                                    <iframe width="100%" height="105%" src="https://www.youtube.com/embed/miycJHABS1w"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-xs-12 col-12 col-md-6">
+                                    <p1 height="100% ">
+
+                                       <h3>O Projeto Adam</h3> 
+                                       <!--sinopse-->
+                                       <p>Um viajante do tempo volta ao ano de 2022 por acidente e acaba se encontrando com seu eu mais novo. Juntos, e sendo caçados 
+                                           por forças do futuro, os dois embarcam em uma missão para consertar a linha temporal e salvar seus entes queridos.</p>
+                                    </p1>
+                                    <p></p>
+                                    <div class="row ">
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Diretor</b>: Shawn Levy
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Estreia</b>: 9 de março de 2022 
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Roteiro</b>: Jonathan Tropper, Jennifer Flackett, T.S. Nowlin, Mark Levin
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <b>Elenco</b>:Ryan Reynolds, Walker Scobell
+                                    </div>
+
+                                    <div class="col-12">
+                                        <b>Avaliação:</b> ★★☆☆☆
+                                    </div>
+
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row" style="margin-bottom: 60px;">
+                                <div class="col-xs-12 col-12 col-md-6" style="min-height: 294px;">
+                                    <iframe width="100%" height="105%" src="https://www.youtube.com/embed/djHT-Jdcek0"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="col-xs-12 col-12 col-md-6">
+                                    <p1 height="100% ">
+
+                                       <h3>Hannah Montana The Movie</h3> 
+                                       <!--sinopse-->
+                                       <p>Hannah Montana: O Filme/Sinopse do filme
+                                        Como muitos adolescentes, Miley Stewart tem sua família, seus amigos e frequenta a escola. Mas há uma pequena diferença: ela é a
+                                        estrela do pop Hannah Montana. À medida que a popularidade de Hannah cresce e passa a ameaçar a vida da garota, Miley, encorajada pelo 
+                                        pai, vai à sua cidade natal no Tennessee para ter contato com a realidade. Lá, a jovem embarca em uma aventura emocionante.</p>
+                                    </p1>
+                                    <p></p>
+                                    <div class="row ">
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Diretor</b>: Peter Chelsom
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Estreia</b>: 11 de junho de 2009
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+                                            <b>Roteiro</b>: Daniel Berendsen
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <b>Elenco</b>:Miley Cyrus  , Emily Osment
+                                    </div>
+
+                                    <div class="col-12">
+                                        <b>Avaliação:</b> ★★★★★
+                                    </div>
+
+                                </div>
+                            </div>     
+                        </div>
+
+
+                        <!-- 2 Filme.... , replicar o filme 1 4x-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Destaque -->
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="destaques" id="destaques">Em destaque</h2>
+                </div>               
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <a href="https://www.youtube.com/embed/Kglg6MG0jrA">
+                        
+                        <img src="images/panico 5.jpg" class="card-img-top" alt="filme1">
+
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text"><b>PANICO 5 | TRAILER AQUI</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <a href="https://www.youtube.com/embed/l4sDvkgh9vI">
+
+                            <img src="images/moonfall.jpg" class="card-img-top" alt="filme1">
+
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text"><b>MOONFALL | TRAILER AQUI</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <a href="https://www.youtube.com/embed/ae6w0-kZ3-M">
+
+                            <img src="images/homemaranhaa.jpg" class="card-img-top" alt="filme1">
+
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text"><b>Homem-Aranha: Sem Volta para Casa |  TRAILER AQUI</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" widht="100%">
+                        <a href="https://www.youtube.com/embed/Wg7V2_OBXwQ">
+
+                            <img src="images/matrizx.jpg" class="card-img-top" alt="filme1">
+
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text"><b>Matrix: Resurrections |  TRAILER AQUI</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align: right; margin-top: 10px;">
+            <div class="row">
+                <div class="col-12">
+                    <a  href="populares.html" class="btn btn-secondary" >+ Filmes </a>
+                </div>
+            </div>
+        </div>
+
+        <!--  Avaliação pelos Usuários -->
+        <div class="container">
+            <h2 class="avaliacoes" id="avaliacoes">Últimas avaliações</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="profile-header-container">
+                                    <img class="img-circle" src="images/felipe.jpg" height="100%" width="100%" />
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h6>Felipe Andrade</h6>
+                                <p><b>Avaliação:</b> Encontrei tudo que precisava no blog, tmj.</p>
+                                <p>★★★☆☆ - 15/03/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="profile-header-container">
+                                    <img class="img-circle" src="images/joana.jpg" height="100%" width="100%" />
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h6>Joana Dark</h6>
+                                <p><b>Avaliação:</b> Ansiosa para Doutor Estranho 2, alias amei o site.</p>
+                                <p>★★★★★ - 08/01/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="profile-header-container">
+                                    <img class="img-circle" src="images/gabriel.jpg" height="100%" width="100%" />
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h6>Gabriel Almeida </h6>
+                                <p><b>Avaliação:</b> Odiei o filme Homem Aranha, esperava mais.</p>
+                                <p>★☆☆☆☆ - 02/02/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align: right; margin-top: 10px;">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais avaliações</button>
+                </div>
+            </div>
+        </div>
+
+        <!--  Entrevistas & Making of -->
+
+        <div class="container" >
+            <h2 class="entrevistas" id="entrevistas">Entrevistas & Making of</h2>
+        </div>
+        <div class="container" >
+            <div class="row">
+                <div class="col-4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LMZPnwz_dT0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jKJX7pLMMKQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vASxme1xaio"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <p><b>Filme:</b> SPIDER-MAN: NO WAY HOME, making of.<br>
+                        <b>Diretor:</b> Jon Watts.<br>
+                        <b>Roteiro:</b> Erik Sommers, Chris McKenna. <b>Estreia:</b> 16 de dezembro de 2021 ★★★★★
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p><b>Filme:</b> Turma Da monica : lissões.<br>
+                        <b>Diretor:</b> Daniel Rezende.<br>
+                        <b>Roteiro:</b> Thiago Dottori. <b>Estreia:</b> 30 de dezembro 2021
+                    </p>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p><b>Filme:</b> Esquadrão Suicida 2.<br>
+                        <b>Diretor:</b> James Gunn.<br>
+                        <b>Roteiro:</b> James Gunn. <b>Estreia:</b> 5 de agosto de 2021
+                    </p>
+                </div>
+            </div>
+        </div>
+        <
+
+        <!-- novidades -->
+        <div class="container" >
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="novidades" id="novidades">Novidades</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-11 col-md-4">
+                                <img height="100%" width="100%" src="images/will.png" alt="imagem1">
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6">
+                                <h5>Will Smith é banido da cerimonia do Oscar
+                                </h5>
+                                <p> Ator foi banido, mas já havia renunciado à academia após tapa em Chris Rock. Banimento não retira estatueta que ganhou em 2022. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" style="margin-top: 10px;">
+                        <div class="row">
+                            <div class="ol-xs-12 col-11 col-md-4">
+                                <img height="100%" width="100%" src="images/lançamentos.png" alt="imagem1">
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6">
+                                <h5>lançamentos da Netflix em março de 2022.
+                                </h5>
+                                <p>Lançamentos da netflix em março de 2022 parece prometer só filmes e series bombasticas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" style="margin-top: 10px; margin-bottom: 15px;">
+                        <div class="row">
+                            <div class="ol-xs-12 col-11 col-md-4">
+                                <img height="100%" width="100%" src="images/thebatman.jpg" alt="imagem1">
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6">
+                                <h5>The Batman recebe criticas positivas.
+                                </h5>
+                                <p>Internautas criticam o novo filme estrelado por Robert Pattinson e Zoe kravitz. "The Batman, de alguma forma, me deu tudo o que 
+                                    eu queria no jovem e emo Bruce Wayne de
+                                     Robert Pattinson e seus primeiros anos vestindo a capa e o capuz"s. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobre -->
+                <div class="col-4"  > 
+                    <h1>Sobre</h1>
+                    <p>Este portal foi desenvolvvido como trabalho da disciplina de designer de interfaces web na PUC Minas.</p>
+                    <h2>Editorial</h2>
+                    <p><b>🧍Redação</b> Ana Luiza </p>
+                    <p><b>🧍Pesquisa</b> Ana Luiza </p>
+                    <p><b>🧍Gerente Geral</b> Ana Luiza </p>
+
+                    <h6>REDES SOCIAIS:</h6>
+                            <a href="https://www.instagram.com/aninha1.1/">
+                                <img id="redes" class="navbar-brand" src="images/redessociais.png" alt="logo">
+                            </a>                                      
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="text-center p-3" style="background-color: rgba(247, 243, 243, 0.2);">
+            <p class="footertext">© 2022 Copyright: Desenvolvimento de Interfaces Web -
+                <b>ICEI PUC MINAS</b>
+                <img class="navbar-brand" src="images/logo.png"widht="90" height="60" alt="logo">
+
+            </p>
+
+        
+
+        </div>
+       
+    </footer>
+
+    <!-- Bootstrap Javascript 2.10 - 04/2022 -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>-->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

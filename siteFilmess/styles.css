@@ -1,0 +1,140 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #5078a1;
+}
+main {
+    background: #212529;
+}
+
+h2 {
+    color: white;
+}
+
+h6 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+a {
+    font-size: large;
+    margin-block: -5px;
+}
+
+p {
+    color: white;
+}
+
+p.card-text {
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    background: #5078a1;
+}
+
+img.navbar-brand {
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+.container {
+    text-align: justify;
+}
+
+.carousel-item {
+    color: white;
+    font-size: 14px;
+}
+
+.carousel-indicators {
+    top: 90%;
+}
+
+.container-info {
+    margin-right: 18%;
+    margin-bottom: 10%;
+    background-color: #5078a1;
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-item img {
+        width: 80%;
+        padding-left: 20%;
+    }
+
+    .container-info {
+        margin-top: 10%;
+        padding-left: 10%;
+        margin-right: 18%;
+        margin-bottom: 10%;
+    }
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-header-container {
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 0;
+}
+
+.profile-header-img {
+    padding: 54px;
+}
+
+img.img-circle {
+    width: 100%;
+    height: 100%;
+}
+
+.fa {
+    color: white;
+    width: 50px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+.footertext {
+    margin-top: 15px;
+    align-self: center;
+    color: #212529;
+}
+
+#popul{
+    font-size: 30px;
+    margin-right: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+#navbarNav{
+    margin-top: 5px;
+}
+#redes{
+    height: 50px;
+}
+#muda{
+    margin-left: 40px;
+}
