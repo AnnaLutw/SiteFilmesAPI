@@ -1,3 +1,3 @@
 # SiteFilmes
 
-Site de filmes ultilizando api
+Site de filmes utilizando API.
